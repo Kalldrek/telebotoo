@@ -6,7 +6,7 @@ bot = telebot.TeleBot(Token)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, message)
+    bot.send_message(message.chat.id, message.text)
 
 
 bot.polling()
